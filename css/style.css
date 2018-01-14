@@ -1,0 +1,471 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body{
+  background-color:#f9f9f9;
+}
+
+
+/*ヘッダートップ*/
+
+.pageHeader{
+  width: 100%;
+}
+
+.headerTop{
+  width: 1100px;
+  margin: 0 auto;
+  position: relative;
+  padding-bottom: 30px;
+  /*↑30pxでいいか要検討*/
+}
+
+h1 img{
+  margin: 40px 0 0 0;
+}
+
+.globalNav{
+  position: absolute;
+  top: 62px;
+  right:150px;
+}
+.globalNav ul li{
+  float: left;
+  padding-left: 30px;
+}
+
+.globalNav li a{
+  color: #5c5b5b;
+  text-decoration: none;
+  font-family: pt-sans, sans-serif;
+  font-style: italic;
+  font-size: 20px;
+  font-weight:lighter;
+  letter-spacing: 2px;
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.globalNav li a::after {
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 1px;
+  background: #5c5b5b;
+  transform: scale(0, 1);
+  transform-origin: right top;
+  transition: transform .3s;
+}
+
+.globalNav a:hover::after {
+  transform-origin: left top;
+  transform: scale(1, 1);
+}
+
+.subNav{
+  position: absolute;
+  top:55px;
+  right:0px;
+}
+
+.subNav li{
+  float: right;
+}
+
+.subNav li.cart{
+  margin-left: 32px;
+}
+
+.subNav li.key{
+  margin-top: -3px;
+}
+
+.subnav img{
+  display: block;
+}
+
+/*カスタマイズ詳細*/
+.customize{
+  width:100%;
+  border-top: dashed 1.8px #b5b9bb;
+  /*border-bottom: dashed 1.8px #b5b9bb;*/
+  position: relative;
+}
+
+.customizeMenu{
+  width: 1100px;
+  margin: 0 auto;
+  position: relative;
+  margin-bottom: 80px;
+}
+
+.customizeDetail{
+  margin: 45px 0 0 23px;
+  font-family: "Yu Gothic", YuGothic;
+  color: #5c5b5b;
+}
+
+.customizeDetail img{
+  margin-bottom: 30px;
+}
+
+.customizeDetail p{
+  font-size: 16px;
+  letter-spacing: 1.5px;
+}
+
+/*オプション*/
+
+.option{
+  margin-top: 37px;
+  position: relative;
+}
+
+.option li{
+  margin: 0 auto;
+}
+
+.optionColor {
+  list-style-type: none;
+  font-family: pt-sans, sans-serif;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: normal;
+  letter-spacing: 4px;
+  padding: 7px 9px;
+  border: 1px solid #3f3e3e;
+  text-align: center;
+}
+
+.optionColor a{
+  text-decoration: none;
+  color: #3f3e3e;
+}
+
+.selectcolor1,
+.selectcolor2{
+  display: none;
+}
+
+.wrappingPaper{
+  width: 67.78px;
+  position: relative;
+}
+
+.wrappingPaper ul {
+  width: 67.78px;
+  position: absolute;
+  top:0;
+  left:90px;
+}
+
+.wrappingPaper p{
+  width: 80px;
+  text-align: center;
+  font-family: pt-sans, sans-serif;
+  font-size: 12px;
+  letter-spacing: 3px;
+  margin: 0 auto;
+  margin-top: 8px;
+  font-style: italic;
+}
+
+.ribbon{
+  width: 67.78px;
+  margin-left: 10px;
+  position: relative;
+  position: absolute;
+  top:0px;
+  left:170px;
+}
+
+.ribbon p{
+  width: 80px;
+  text-align: center;
+  font-family: pt-sans, sans-serif;
+  font-size: 12px;
+  letter-spacing: 3px;
+  margin: 0 auto;
+  font-style: italic;
+  margin-top: 8px;
+}
+
+.ribbon ul {
+  width: 67.78px;
+  position: absolute;
+  top:0;
+  left:90px;
+}
+
+
+
+/*カスタマイズイメージ*/
+.customizeImg img{
+  position: absolute;
+  top:-30px;
+  left: 0;
+  right:0;
+  margin: auto;
+  padding-bottom: 20px;
+  z-index: -100;
+  opacity: 1;
+}
+
+/*値段*/
+.price{
+  float: right;
+  margin-top:-150px;
+  margin-right: 53px;
+  font-family: pt-sans, sans-serif;
+  font-size: 32px;
+  font-style: italic;
+  letter-spacing: 3px;
+  font-weight: bold;
+  color: #3f3e3e;
+}
+
+.money{
+  float:right;
+  font-family: pt-sans, sans-serif;
+  font-size: 36px;
+  font-style: italic;
+  letter-spacing: 5px;
+  margin-top: -100px;
+  margin-right: 54px;
+  color:#3f3e3e;
+  border-bottom: 1px solid #3f3e3e;
+}
+
+/*カート*/
+.addToCart{
+  width:230px;
+  float: right;
+  margin-top:30px;
+  margin-right: 53px;
+  font-family: pt-sans, sans-serif;
+  font-size: 34.29px;
+  font-style: italic;
+  font-weight: bold;
+  letter-spacing: 5px;
+  padding:10px 0;
+  border-top:5.34px solid #3f3e3e;
+  border-bottom:5.34px solid #3f3e3e;
+  text-align: center;
+}
+
+.addToCart a{
+  text-decoration: none;
+  color: #3f3e3e;
+}
+
+
+.selectBotanical{
+  width:1100px;
+  height: 170px;
+  margin: 0 auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  border-top: 1px solid #b5b9bb;
+  border-bottom: 1px solid #b5b9bb;
+}
+
+.colorMenu{
+  background-color:#f9f9f9;
+  width:196px;
+  height: 166px;
+  border-right: 1px dashed #b5b9bb;
+  border-left: 1px dashed #b5b9bb;
+  float: left;
+  padding-bottom: 5px;
+}
+
+.botanicalBox{
+  width: 900px;
+  overflow-x: scroll;
+  float: left;
+  padding-top: 5px;
+  padding-bottom: 15px;
+}
+
+.botanicalBox ul{
+  width: 2000px;
+}
+
+/*.botanicalstyle{
+  width: 1100px;
+  overflow-x: scroll;
+  float: left;
+  margin-left: 200px;
+}*/
+
+/*.botanicalstyle img{
+  margin-bottom: 13px;
+}*/
+
+
+/*.botanical:first-of-type{
+  margin-left: 250px;
+}*/
+
+.botanical{
+  float: left;
+  position: relative;
+  margin-left: 60px;
+}
+
+
+.colorMenu p.colorName{
+  font-family: pt-sans, sans-serif;
+  font-size: 24px;
+  font-style: italic;
+  letter-spacing: 7px;
+  padding: 30px 57px;
+  margin: 10px 0;
+
+}
+
+.rectangle{
+  width: 118px;
+  height: 32px;
+  background:#009944;
+  margin: auto;
+}
+
+/*botanical選択*/
+.custamizeBotanical{
+  position: absolute;
+	transform:scale(0.4,0.4);
+	z-index: -1;
+
+  opacity: 0;
+}
+/*
+.botanical_1{
+  top: 70px;
+  left: 500px;
+}
+
+.botanical_2{
+  top: 100px;
+  left: 550px;
+  transform: rotate(10deg);
+}
+
+.botanical_3{
+  top:100px;
+  left: 480px;
+  transform: rotate(-10deg);
+}
+
+.botanical_4{
+  top:80px;
+  left: 500px;
+  z-index: -1;
+  transform: rotate(10deg);
+}
+
+.botanical_5{
+  top:80px;
+  left: 430px;
+  transform: rotate(-10deg)
+}
+
+.botanical_6{
+  top:30px;
+  left:450px;
+  z-index: -2;
+}
+
+.botanical_7{
+  top:80px;
+  left: 400px;
+}
+
+.botanical_8{
+  top:50px;
+  left:400px;
+}
+
+.botanical_9{
+  top:80px;
+  left: 500px;
+}
+ */
+
+/*レコメンドメニュー*/
+
+.recommendBox{
+  width: 1000px;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.recommendBox h2{
+  font-family: pt-sans, sans-serif;
+  font-size: 36px;
+  font-style: italic;
+  color: #282828;
+  letter-spacing: 5px;
+  margin-bottom: 49px;
+}
+
+.recommendMenu{
+  float: left;
+  margin-right: 50px;
+  margin-bottom: 146px;
+}
+
+.recommendMenuLast{
+  margin-right: 0;
+}
+
+.recommendPrice{
+  padding-top: 30px;
+  font-family: pt-sans, sans-serif;
+  font-size:22px;
+  color:#282828;
+  letter-spacing: 3px;
+  font-style: italic;
+  text-align: center;
+  font-weight: normal;
+
+}
+
+.recommendPhoto a{
+  width: 300px;
+  height: 300px;
+  display:inline-block;
+}
+
+/*フッター*/
+.footer{
+  width:100%;
+  min-height: 200px;
+  margin: 0 auto;
+}
+
+.eda{
+  width: 1200px;
+  margin: 0 auto;
+  margin-top: 150px;
+}
+
+.footer p{
+  font-family: pt-sans, sans-serif;
+  font-style: italic;
+  color: #5c5b5b;
+}
+
+.footer p small{
+	display: block;
+	width: 1200px;
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 120px;
+  padding-bottom: 50px;
+  letter-spacing: 2px;
+}

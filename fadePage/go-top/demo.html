@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Go Top | jQuery Plugin :: Demo</title>
+<link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="screen" >
+<link href="jquery.go-top.css" rel="stylesheet" type="text/css" media="screen" >
+<style>
+h1{
+	text-transform:uppercase;
+}
+div.demo-contents{
+	padding:16px 16px 2000px;
+	background:#f0f0f0;
+}
+</style>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="jquery.go-top.js"></script>
+<script>
+jQuery(function($){
+	$.goTop({label:'TOP'});
+});
+</script>
+</head>
+<body>
+	<div class="navbar navbar-default navbar-fixed-topx" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			<div class="collapse navbar-collapse navbar-ex1-collapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="http://www.cyokodog.net/blog/jquery-sitekit/" target="_blank"><span class="glyphicon glyphicon-book"></span> Document</a></li>
+					<li><a href="https://github.com/cyokodog/jquery.sitekit" target="_blank"><b class="glyphicon glyphicon-download-alt"></b> Download</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="page-header">
+			<h1>Go Top <small>:: jQuery SiteKit</small></h1>
+			<p class="lead">$.goTop()</p>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="demo-contents">
+		↓方向にスクロールしてください
+		</div>
+	</div>
+</body>
+</html>

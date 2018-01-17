@@ -338,9 +338,7 @@ h1 img{
 /*botanical選択*/
 .custamizeBotanical{
   position: absolute;
-	transform:scale(0.4,0.4);
-	z-index: -1;
-
+	/* transform:scale(0.4,0.4); */
   opacity: 0;
 }
 /*

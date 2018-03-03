@@ -210,8 +210,23 @@ h1 img{
   right:0;
   margin: auto;
   padding-bottom: 20px;
-  z-index: -100;
+  z-index: -1;
   opacity: 1;
+}
+
+.customizeImgBouquet img{
+	position: absolute;
+	top:180px;
+	left: 0;
+	right:0;
+	margin: auto;
+	padding-bottom: 20px;
+	z-index: 100;
+	opacity: 0;
+}
+
+.container {
+	position:relative;
 }
 
 /*値段*/
